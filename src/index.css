@@ -3,3 +3,21 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.ItemForm {
+  background-color: gray;
+  text-align: center;
+}
+.ShoppingList {
+  background-color: gray;
+  text-align: center;
+}
+.App {
+  margin-top: 5%;
+  border: blue solid 10px;
+  width: 50%;
+  margin-left: 25%;
+}
+h1 {
+  text-align: center;
+}

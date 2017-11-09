@@ -11,11 +11,11 @@ class App extends Component {
       this.state = {
           listItems: [
               {
-                  name: "Brain",
+                  name: "Working Brain",
                   price: 1,
               },
               {
-                  name: "Working Brain",
+                  name: "Hair",
                   price: 2
               }
             ]
