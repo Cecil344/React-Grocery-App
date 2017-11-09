@@ -8,7 +8,7 @@ class ItemForm extends Component {
       // for the form.
       this.state = {
           item: "",
-          cost: "",
+          price: "",
       };
   }
 
@@ -22,7 +22,7 @@ return(
     </p>
     <p>
         <label>Price</label>
-        <input value={this.state.pricel} onChange={this.handlePriceChange.bind(this)}/>
+        <input value={this.state.price} onChange={this.handlePriceChange.bind(this)}/>
     </p>
     <p className="ItemForm__button-bar">
         <button type="submit">Add Item</button>
@@ -34,7 +34,7 @@ return(
         handleItemChange(event) {
             this.setState({
                 // We get the new input value from the event.
-                name: event.target.value
+                item: event.target.value
             });
         }
 
@@ -51,12 +51,12 @@ return(
             // Pass it a new contact object.
             this.props.onSubmit({
                 name: this.state.item,
-                price: this.state.cost,
+                price: this.state.price,
 
             });
             // Clear the form by simply updating the state with empty form values.
             this.setState({
-                name: "",
+                item: "",
                 price: "",
             })
         }
